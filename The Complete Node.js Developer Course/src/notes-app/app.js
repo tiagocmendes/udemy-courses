@@ -6,3 +6,5 @@ try {
     console.error(err);
     fs.writeFileSync('logging.txt', `${Date.now()} - logging...\n`);
 }
+
+console.log("Hello");
