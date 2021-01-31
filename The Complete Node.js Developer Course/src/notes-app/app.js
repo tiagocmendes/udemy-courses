@@ -1,10 +1,6 @@
-const fs = require('fs');
+const chalk = require('chalk');
+const getNotes = require('./notes.js');
 
-try {
-    fs.appendFileSync('logging.txt', `${Date.now()} - logging...\n`);
-} catch(err) {
-    console.error(err);
-    fs.writeFileSync('logging.txt', `${Date.now()} - logging...\n`);
-}
+const msg = getNotes();
 
-console.log("Hello");
+console.log(`${chalk.green.underline.inverse.bold('Success:')} ${chalk.default.blue(msg)}`);
