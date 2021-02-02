@@ -16,6 +16,7 @@ yargs.command({
     }
 });
 
+
 // Create remove command
 yargs.command({
     command: 'remove',
