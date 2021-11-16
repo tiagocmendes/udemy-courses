@@ -1,7 +1,0 @@
-<button class="btn btn-primary" (click)="toggleDisplay()">{{ buttonText }}</button>
-<p *ngIf="showDetails">Secret password = tuna</p>
-<p
-    *ngFor="let click of clicks; let i = index"
-    [ngStyle]="i >= 4 ? { backgroundColor: 'blue' } : {}"
-    [ngClass]="{ white: i >= 4 }"
->Click No. {{ click }}</p>
