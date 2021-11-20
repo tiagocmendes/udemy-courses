@@ -1,0 +1,9 @@
+<%- include('partials/head') %>
+<h1>All Pokemons:</h1>
+<ul>
+  <% for(let pokemon of pokemons) { %>
+  <li><%= pokemon %></li>
+  <% }%>
+</ul>
+<h2>Favorite pokemon: <%= favoritePokemon %></h2>
+<%- include('partials/footer') %>

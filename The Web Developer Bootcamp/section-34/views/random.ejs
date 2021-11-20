@@ -1,0 +1,7 @@
+<%- include('partials/head') %>
+<h1><%= title%> <%= rand %></h1>
+<% if(rand % 2 === 0) { %>
+<h2>Even</h2>
+<% } else { %>
+<h2>Odd</h2>
+<% } %> <%- include('partials/footer') %>
