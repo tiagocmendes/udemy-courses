@@ -21,6 +21,7 @@ app.get("/pokemons", (req, res) => {
   const pokemons = ["Pikachu", "Charmander", "Bulbasaur", "Squirtle"];
   res.render("pokemons", {
     pokemons,
+    
     title: "Pokemons",
     favoritePokemon: pokemons[1],
   });
